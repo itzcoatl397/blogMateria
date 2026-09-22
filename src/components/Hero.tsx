@@ -11,31 +11,49 @@ export const Hero = () => {
 
                     <div className="flex items-center gap-3">
                         <span className="text-2xl">🌎</span>
+
                         <span className="font-bold text-lg">
                             Globalización
                         </span>
                     </div>
 
                     <div className="hidden md:flex gap-8 text-sm">
-                        <a href="#" className="hover:text-cyan-400 transition">
+
+                        <a
+                            href="#"
+                            className="hover:text-cyan-400 transition"
+                        >
                             Inicio
                         </a>
 
-                        <a href="#" className="hover:text-cyan-400 transition">
+                        <a
+                            href="#"
+                            className="hover:text-cyan-400 transition"
+                        >
                             Económica
                         </a>
 
-                        <a href="#" className="hover:text-cyan-400 transition">
+                        <a
+                            href="#"
+                            className="hover:text-cyan-400 transition"
+                        >
                             Social
                         </a>
 
-                        <a href="#" className="hover:text-cyan-400 transition">
+                        <a
+                            href="#"
+                            className="hover:text-cyan-400 transition"
+                        >
                             Cultural
                         </a>
 
-                        <a href="#" className="hover:text-cyan-400 transition">
+                        <a
+                            href="#"
+                            className="hover:text-cyan-400 transition"
+                        >
                             Tecnológica
                         </a>
+
                     </div>
 
                     <button className="bg-cyan-500 hover:bg-cyan-400 text-[#06111F] px-5 py-2 rounded-full font-semibold transition">
@@ -44,6 +62,7 @@ export const Hero = () => {
 
                 </div>
             </nav>
+
 
             {/* HERO */}
             <section className="min-h-[calc(100vh-73px)] flex items-center">
@@ -72,19 +91,27 @@ export const Hero = () => {
             </section>
 
 
-            <div className="  flex justify-center  bg-[#081A2E] border-t border-cyan-400/20 py-12">
-                <Globalizacion />
-            </div>
+            {/* SECCIÓN GLOBALIZACIÓN */}
+            <section className="w-full bg-white text-black border-t border-cyan-400/20 py-12">
 
-            <div className="bg-[#081A2E] border-t border-cyan-400/20 py-4">
-
-                <div className="container mx-auto px-6 text-center text-sm text-gray-400">
-                    © 2024 Globalización. Todos los derechos reservados.
+                <div className="flex justify-center">
+                    <Globalizacion />
                 </div>
 
-            </div>
+            </section>
+
+
+            {/* FOOTER */}
+            <footer className="border-t border-cyan-400/20 py-4">
+
+                <div className="container mx-auto px-6 text-center text-sm text-gray-400">
+
+                    © 2024 Globalización. Todos los derechos reservados.
+
+                </div>
+
+            </footer>
 
         </div>
     )
 }
-

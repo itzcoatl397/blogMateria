@@ -4,7 +4,7 @@ import Timeline from './Timeline'
 export const Globalizacion = () => {
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-6 py-10 text-white">
+        <div className="w-full max-w-6xl mx-auto px-6 py-10">
 
             <div className="shadow-2xl rounded-lg p-8">
 
@@ -22,7 +22,7 @@ export const Globalizacion = () => {
 
             </div>
 
-            <div className="mt-12 w-full">
+            <div className="mt-12 w-full text-white">
                 <Timeline />
             </div>
 

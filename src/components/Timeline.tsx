@@ -3,36 +3,74 @@ import { infoData } from "../data/database";
 
 function Timeline() {
     return (
-        <div className="w-full h-[650px] max-w-6xl mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-6 py-16">
 
-            <Chrono
-                items={infoData}
-                mode="VERTICAL_ALTERNATING"
-                disableToolbar
-                cardHeight={200}
-                cardWidth={450}
-                slideShow={false}
-                theme={{
-                    primary: "#38bdf8",
-                    secondary: "#0f172a",
+            {/* ENCABEZADO */}
+            <div className="text-center mb-10">
 
-                    cardBgColor: "#0f172a",
-                    cardForeColor: "#e2e8f0",
+                <span className="text-cyan-500 font-bold tracking-[0.3em] text-sm uppercase">
+                    México y el mundo
+                </span>
 
-                    titleColor: "#38bdf8",
-                    titleColorActive: "#ffffff",
+                <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-3">
+                    Globalización en México
+                </h2>
 
-                    cardTitleColor: "#ffffff",
-                    cardSubtitleColor: "#94a3b8",
+                <p className="text-slate-500 max-w-2xl mx-auto mt-4 text-lg">
+                    La globalización se manifiesta en diferentes aspectos
+                    de la vida económica, social, cultural y tecnológica.
+                </p>
 
-                    cardDetailedTextColor: "#cbd5e1",
+            </div>
 
-                    iconBackgroundColor: "#38bdf8",
-                    iconColor: "#0f172a",
+            {/* TIMELINE */}
+            <div className="w-full overflow-hidden">
 
-                    titleBackgroundColor: "#0f172a",
-                }}
-            />
+                <Chrono
+                    items={infoData}
+                    mode="vertical"
+
+                    cardHeight={200}
+                    cardWidth={360}
+
+                    slideShow={false}
+
+                    disableToolbar
+
+                    borderLessCards={false}
+
+                    highlightCardsOnHover
+
+                    focusActiveItemOnLoad
+
+                    activeItemIndex={0}
+
+                    theme={{
+                        /* Línea */
+                        primary: "#06b6d4",
+                        secondary: "#cbd5e1",
+
+                        /* Tarjetas */
+                        cardBgColor: "#ffffff",
+                        cardForeColor: "#334155",
+
+                        /* Categorías / números */
+                        titleColor: "#64748b",
+                        titleColorActive: "#06b6d4",
+                        titleBackgroundColor: "transparent",
+
+                        /* Texto */
+                        cardTitleColor: "#0f172a",
+                        cardSubtitleColor: "#0891b2",
+                        cardDetailedTextColor: "#475569",
+
+                        /* Puntos */
+                        iconBackgroundColor: "#06b6d4",
+                        iconColor: "#ffffff",
+                    }}
+                />
+
+            </div>
 
         </div>
     );
